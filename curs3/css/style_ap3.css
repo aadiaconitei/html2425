@@ -1,0 +1,21 @@
+h1{
+    width: 100%;
+    max-width: 600px;
+    border: 2px dotted #a11818;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+section{
+    width: 40%;
+    float: left;
+    border: double 3px red;
+    margin: 20px;
+    padding: 15px 25px;
+    border-radius: 100%;
+    background-image: url(../../html.png);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
