@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+
+        .container {
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Imagine afisata diferit in functie de dimensiunea ecranului</h1>
+        <img srcset="
+          https://placehold.co/480?text=Mobile 480w, 
+          https://placehold.co/768?text=Tableta 768w, 
+          https://placehold.co/1024?text=Laptop 1024w, 
+          https://placehold.co/1200?text=Desktop 1200w" sizes="
+            (max-width: 600px) 100vw, 
+            (max-width: 900px) 80vw, 
+            (max-width: 1200px) 60vw, 
+            50vw" src="design.jpg" alt="Responsive example image">
+    </div>
+
+
+
+
+</body>
+
+</html>

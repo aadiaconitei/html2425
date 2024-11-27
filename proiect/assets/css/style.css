@@ -32,6 +32,9 @@ nav ul li a{
     font-size: 30px;
     color: #ffffff;
     text-decoration: none;
+    font-family: "Sevillana", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* END HEADER */
