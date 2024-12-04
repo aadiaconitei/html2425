@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Adrian A">
+
+    <title>Proiect PMS: HTML + CSS</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../assets/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png" />
+
+</head>
+
+<body>
+    <!-- START HEADER -->
+    <header>
+        <div class="logo">
+            <img id="logo" src="../assets/images/logo.png" alt="Logo PMS">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">
+                        Acasa
+                    </a>
+                </li>
+                <li><a href="./portofoliu.html">Portofoliu</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./despre.html">Despre noi</a></li>
+                <li class="active"><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- STOP HEADER -->
+    <main>
+        <h1 class="titlu"> Pagina Contact</h1>
+
+        <form id="contact" action="" method="get">
+
+            <div>
+                <label for="">Orasul</label>
+                <select name="oras" id="">
+                    <option value="1">Bacau</option>
+                    <option value="2">Buzau</option>
+                    <option value="3">Dolj</option>
+                    <option value="4">Iasi</option>
+                </select>
+            </div>
+            <div>
+                <label for="">Cursuri</label>
+                <select name="cursuri[]" id="" multiple>
+                    <option value="css">CSS</option>
+                    <option value="html">HTML</option>
+                    <option value="js">JavaScript</option>
+                    <option value="vue">VueJs</option>
+                    <option value="node">NodeJs</option>
+    
+                </select>
+            </div>
+            <div>
+                <label for="">Mesak</label>
+                <textarea name="mesaj" id=""></textarea>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Program cursuri</legend>
+                    <input type="radio" name="program" id="" value="dimineata">
+                    <label for="">dimineata</label>
+                    <input type="radio" name="program" id="" value="pranz" checked>
+                    <label for="">pranz</label>
+                    <input type="radio" name="program" id="" value="seara"  disabled>
+                    <label for="">seara</label>
+                </fieldset>
+            </div>
+            <div>
+                <button type="submit"> Trimte datele</button>
+            </div>
+        </form>
+
+
+
+        <div id="import" class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+            <div class="wrapper wrapper--w680">
+                <div class="card card-4">
+                    <div class="card-body">
+                        <h2 class="title">Registration Form</h2>
+                        <form method="POST">
+                            <div class="row row-space">
+                                <div class="col-2">
+                                    <div class="input-group">
+                                        <label class="label">first name</label>
+                                        <input class="input--style-4" type="text" name="first_name">
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="input-group">
+                                        <label class="label">last name</label>
+                                        <input class="input--style-4" type="text" name="last_name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row-space">
+                                <div class="col-2">
+                                    <div class="input-group">
+                                        <label class="label">Birthday</label>
+                                        <div class="input-group-icon">
+                                            <input class="input--style-4 js-datepicker" type="text" name="birthday">
+                                            <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="input-group">
+                                        <label class="label">Gender</label>
+                                        <div class="p-t-10">
+                                            <label class="radio-container m-r-45">Male
+                                                <input type="radio" checked="checked" name="gender">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="radio-container">Female
+                                                <input type="radio" name="gender">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row-space">
+                                <div class="col-2">
+                                    <div class="input-group">
+                                        <label class="label">Email</label>
+                                        <input class="input--style-4" type="email" name="email">
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="input-group">
+                                        <label class="label">Phone Number</label>
+                                        <input class="input--style-4" type="text" name="phone">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label class="label">Subject</label>
+                                <div class="rs-select2 js-select-simple select--no-search">
+                                    <select name="subject" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true">
+                                        <option disabled="disabled" selected="selected">Choose option</option>
+                                        <option>Subject 1</option>
+                                        <option>Subject 2</option>
+                                        <option>Subject 3</option>
+                                    </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 108px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-subject-vq-container"><span class="select2-selection__rendered" id="select2-subject-vq-container" title="Choose option">Choose option</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                    <div class="select-dropdown"></div>
+                                </div>
+                            </div>
+                            <div class="p-t-15">
+                                <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>

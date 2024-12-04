@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curs 6 aplicatia 1</title>
+</head>
+<body>
+    <h1>Primul formular</h1>
+
+
+    <form action="" method="get">
+        <div>
+            <label for="nume">Nume</label>
+            <input type="text" name="nume" id="nume" value="Popescu" required>
+        </div>
+        <div>
+            <label for="prenume">Prenume</label>
+            <input type="text" name="prenume" id="prenume" required> 
+        </div>
+        <div>
+            <label for="pass">Parola</label>
+            <input type="password" name="paroila" id="pass">
+        </div>
+        <div>
+            <label for="email">Email </label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="mesaj">Mesaj</label>
+            <textarea name="mesaj" id="mesaj"></textarea>
+        </div>
+
+        <div>
+            <label for="oras"> Oras</label>
+            <select name="oras" id="oras">
+                <option value="1">Cluj</option>
+                <option value="2">Iasi</option>
+                <option value="3">Buzau</option>
+            </select>
+        </div>
+        <div>
+            <label for="poza">Poza</label>
+            <input type="file" name="poza" id="poza">
+        </div>
+        <div>
+            <input type="submit" value="Trimite datele">
+        </div>
+
+    </form>
+</body>
+</html>
